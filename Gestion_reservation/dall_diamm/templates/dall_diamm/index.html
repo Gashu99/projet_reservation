@@ -1,0 +1,56 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'dall_diamm/css/styleindex.css' %}">
+    <title>My site </title>
+
+</head>
+<body>
+    <div>
+        <img src="{% static 'dall_diamm/images/myback.jpg' %}" alt="" class="back">
+    </div>
+    <div class="entete">
+        <div class="DD" style="font-size: x-large">Dall Diamm</div>
+        <div class="meslien">
+            <a href="" style="font-size: large">Acceuil &NonBreakingSpace;</a>
+            <a href=""  style="font-size: large">Chambre &NonBreakingSpace;</a>
+            <a href=""  style="font-size: large">Vehicules &NonBreakingSpace;</a>
+            <a href=""  style="font-size: large">Restaurant &NonBreakingSpace;</a>
+            <a href=""  style="font-size:large">Connection &NonBreakingSpace;</a>
+        </div>
+
+    </div>
+    <input type="search" placeholder="search" class="barre_recherche">
+    <div class="be">
+        <h2 class="fr">Bienvenue sur <br> Dall Diam</h2>
+        <h2 class="wf">Eksil ak diam si <br> Dall Diam</h2>
+
+    </div>
+    <p class="text">Meilleur hotel au Sénégal </p>
+    <p class="activity"> <em> Nos Activités</em></p>
+    <div class="mesimg">
+        <div class="c"><img src="{% static 'dall_diamm/images/chambre.jpg' %}" alt=""  class="chambre"><span class="RC">Reserver Chambre</span></div>
+        <div><img src="{% static 'dall_diamm/images/restaurant.jpg' %}" alt="" class="restaurant"><span class="RR"> Restaurant</span></div>
+        <div><img src="{% static 'dall_diamm/images/chambre.jpg' %}" alt=""  class="voiture"><span></span></div>
+        <div><img src="{% static 'dall_diamm/images/chambre.jpg' %}" alt=""><span></span></div>
+        <div><img src="{% static 'dall_diamm/images/restaurant.jpg' %}" alt=""><span></span></div>
+        {% comment %}<div><img src="{% static 'dall_diamm/images/restaurant.jpg' %}" alt=""><span></span></div>
+        <div><img src="{% static 'dall_diamm/images/chambre.jpg' %}" alt=""><span></span></div>{% endcomment %}
+    </div>
+    
+    <p class="activity1"> <em> Vos Activités</em></p>
+    <div class=" vosactivites">
+        <div class="carte1">
+            <img src="{% static 'dall_diamm/images/chambre.jpg' %}" alt="" width="100%">
+        </div>
+    </div>
+
+    
+    
+</body>
+
+</html>
