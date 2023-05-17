@@ -1,40 +1,41 @@
-body{
+body {
     margin: auto;
     width: auto;
     height: auto;
 }
-.back{
-    width:100%;
+
+.back {
+    width: 100%;
     height: 800px;
-    
     position: relative;
     filter: saturate(120%) brightness(80%);
 }
-.entete{
+
+.entete {
     width: 100%;
     position: absolute;
     top: 5px;
     display: flex;
     justify-content: space-between;
-   
 }
-.DD{
+
+.DD {
     color: white;
 }
-.meslien{
+
+.meslien {
     color: white;
     margin-right: 2%;
 }
-.meslien a{
+
+.meslien a {
     text-decoration: none;
     color: white;
     position: relative;
     z-index: 1;
-    
 }
 
-
-.barre_recherche{
+.barre_recherche {
     width: 20%;
     height: 50px;
     border-radius: 10px;
@@ -42,7 +43,8 @@ body{
     position: absolute;
     top: 80px;
 }
-.be{
+
+.be {
     width: 100%;
     position: absolute;
     top: 150px;
@@ -50,13 +52,16 @@ body{
     display: flex;
     justify-content: space-between;
 }
-.fr{
+
+.fr {
     margin-left: 10%;
 }
-.wf{
+
+.wf {
     margin-right: 10%;
 }
-.text{
+
+.text {
     font-family: 'Courier New';
     position: absolute;
     top: 30%;
@@ -64,15 +69,16 @@ body{
     color: rgba(255, 255, 255, 0.7);
     margin-left: 50%;
 }
-.activity{
+
+.activity {
     position: absolute;
     top: 50%;
     color: white;
     margin-left: 5%;
 }
 
-.mesimg{
-   width: 100%;
+.mesimg {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     position: absolute;
@@ -81,20 +87,28 @@ body{
     white-space: nowrap;
     overflow-x: auto;
 }
+
 .mesimg img {
-    display: inline-block; 
-    vertical-align: middle; /* Pour aligner les images verticalement */
-    max-width: 100%;/* Pour s'assurer que les images ne dépassent pas la largeur du conteneur */
-    height: auto; /* Pour conserver le ratio de l'image */
-    margin: 40px; /* Pour ajouter un espace entre les images */
+    display: inline-block;
+    vertical-align: middle;
+    /* Pour aligner les images verticalement */
+    max-width: 100%;
+    /* Pour s'assurer que les images ne dépassent pas la largeur du conteneur */
+    height: auto;
+    /* Pour conserver le ratio de l'image */
+    margin: 40px;
+    /* Pour ajouter un espace entre les images */
     border-radius: 10%;
-  }
-.restaurant{
+}
+
+.restaurant {
     margin-left: 10px;
 }
-.voiture{
+
+.voiture {
     margin-left: 10px;
 }
+
 .RC {
     font-weight: bold;
     position: absolute;
@@ -103,9 +117,9 @@ body{
     transform: translate(-50%, -50%);
     text-align: center;
     color: white;
-  }
+}
 
-.RR{
+.RR {
     font-weight: bold;
     position: absolute;
     top: 60%;
@@ -113,17 +127,30 @@ body{
     transform: translate(-50%, -50%);
     text-align: center;
     color: white;
-
 }
-.activity1{
+
+.activity1 {
     position: absolute;
     top: 100%;
     margin-left: 05%;
 }
 
-.carte1{
+.carte1 {
     width: 50%;
     border-radius: 10%;
     position: absolute;
     top: 150%;
+}
+
+.citation {
+    text-align: center;
+    font-size: 34px;
+    font-weight: 100;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    position: absolute;
+    top: 248%;
+    right: 20%;
+}
+
+
 }

@@ -9,3 +9,8 @@ def index(request):
     return HttpResponse(template.render(context,request))
 
 
+def form_inscription(request):
+    context={}
+    template=loader.get_template("dall_diamm/form_inscription.html")
+    return HttpResponse(template.render(context,request))
+
