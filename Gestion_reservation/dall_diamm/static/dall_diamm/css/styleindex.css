@@ -58,7 +58,7 @@ body {
 }
 
 .wf {
-    margin-right: 10%;
+    margin-right: 40%;
 }
 
 .text {
@@ -77,6 +77,11 @@ body {
     margin-left: 5%;
 }
 
+.container{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
 .mesimg {
     width: 100%;
     display: flex;
@@ -86,6 +91,7 @@ body {
     text-align: center;
     white-space: nowrap;
     overflow-x: auto;
+    gap: 10px;
 }
 
 .mesimg img {
@@ -130,18 +136,93 @@ body {
 }
 
 .activity1 {
+    width: 100%;
     position: absolute;
     top: 100%;
     margin-left: 05%;
 }
 
-.carte1 {
-    width: 50%;
+.carte1  {
+    display: flex;
+    width: 27%;
+    height: 200px;
     border-radius: 10%;
     position: absolute;
-    top: 150%;
-}
+    top: 110%;
+    left: 3%;
+    box-shadow: 10px;
+    border-radius: 10%;
+    box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.2);
+      
 
+}
+.carte1 img , .carte2 img , .carte3 img  {
+    border-radius: 10%;
+    position: absolute;
+    
+   
+}
+.carte1 p{
+    width: 30%;
+    position: absolute;
+    left: 75%;
+}
+.carte1 button{
+    width: 100%; 
+    color: white;
+    background-color: aqua;
+}
+.vosactivites{
+    width: 130%;
+    top: 80%;
+}
+.carte2  {
+    display: flex;
+    width: 25%;
+    border-radius: 10%;
+    position: absolute;
+    top: 110%;
+    left: 38%;
+    box-shadow: 10px;
+    box-shadow: 10px 10px 10px 10px 10px 10px;
+
+}
+.carte2 p{
+    width: 50%;
+    position: absolute;
+    left: 81%;
+}
+.carte2 button{
+    width: 100%; 
+    color: white;
+    background-color: aqua;
+}
+.carte3  {
+    display: flex;
+    width: 25%;
+    border-radius: 10%;
+    position: absolute;
+    top: 110%;
+    left: 69%;
+    box-shadow: 10px;
+    box-shadow: 10px 10px 10px 10px 10px 10px;
+
+}
+.carte3 p{
+    width: 50%;
+    position: absolute;
+    left: 90%;
+}
+.carte3 button{
+    width: 100%; 
+    color: white;
+    background-color: aqua;
+}
+.ajoutactivite{
+    position: absolute;
+    top: 130%;
+    margin-left: 05%;
+}
 .citation {
     text-align: center;
     font-size: 34px;
@@ -153,4 +234,3 @@ body {
 }
 
 
-}
