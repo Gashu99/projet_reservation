@@ -96,7 +96,7 @@ body {
     top: 65%;
     text-align: center;
     white-space: nowrap;
-    overflow-x: auto;
+    overflow-x: hidden;
     gap: 10px;
     background-image: linear-gradient(to top,white, transparent);   
 }
@@ -436,4 +436,11 @@ body {
 .f p{
     margin-left: 10%;
     margin-top: 8%;
+}
+
+.footer{
+    position: absolute;
+   
+    height: 200px;
+    background-color: black;
 }
