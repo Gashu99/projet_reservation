@@ -63,7 +63,6 @@ body {
 .wf {
     margin-left: 40%;
     font-size: 30px;
-
 }
 
 .text {
@@ -84,7 +83,7 @@ body {
     font-size: 30px;
 }
 
-.container{
+.container {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
 }
@@ -97,9 +96,16 @@ body {
     top: 65%;
     text-align: center;
     white-space: nowrap;
-    overflow-x: auto;
+    overflow-x: scroll;
+    overflow-y: clip;
     gap: 10px;
-    background-image: linear-gradient(to top,white, transparent);   
+    background-image: linear-gradient(to top, white, transparent);
+}
+
+.mesimg::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    background-color: transparent;
 }
 
 .mesimg img {
@@ -151,7 +157,7 @@ body {
     font-size: 30px;
 }
 
-.carte1  {
+.carte1 {
     display: flex;
     width: 30%;
     height: 200px;
@@ -161,36 +167,39 @@ body {
     left: 2%;
     border-radius: 10%;
     box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.2);
-      
-
 }
-.carte1 img , .carte2 img , .carte3 img  {
+
+.carte1 img,
+.carte2 img,
+.carte3 img {
     border-radius: 10%;
     position: absolute;
     top: 2%;
     left: 2%;
-    
-   
 }
-.carte1 p{
+
+.carte1 p {
     width: 30%;
     position: absolute;
     left: 70%;
 }
-.carte1 button{
-    width: 80%; 
+
+.carte1 button {
+    width: 80%;
     color: white;
-    background-color:#22ACFB;
+    background-color: #22ACFB;
     border-radius: 10%;
 }
-.vosactivites{
+
+.vosactivites {
     display: flex;
     width: 100%;
     top: 80%;
     white-space: nowrap;
     overflow-x: auto;
 }
-.carte2  {
+
+.carte2 {
     display: flex;
     width: 30%;
     height: 200px;
@@ -199,20 +208,22 @@ body {
     top: 105%;
     left: 35%;
     box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.2);
-
 }
-.carte2 p{
+
+.carte2 p {
     width: 30%;
     position: absolute;
     left: 65%;
 }
-.carte2 button{
-    width: 100%; 
+
+.carte2 button {
+    width: 100%;
     color: white;
-    background-color:#22ACFB;
+    background-color: #22ACFB;
     border-radius: 10%;
 }
-.carte3  {
+
+.carte3 {
     display: flex;
     width: 30%;
     border-radius: 10%;
@@ -222,26 +233,29 @@ body {
     left: 69%;
     box-shadow: 10%;
     box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.2);
-      
 }
-.carte3 p{
+
+.carte3 p {
     width: 30%;
     position: absolute;
     left: 65%;
 }
-.carte3 button{
-    width: 100%; 
+
+.carte3 button {
+    width: 100%;
     color: white;
     background-color: #22ACFB;
     border-radius: 05%;
 }
-.ajoutactivite{
+
+.ajoutactivite {
     position: absolute;
     top: 130%;
     margin-left: 05%;
     font-size: 30px;
 }
-.ajout{
+
+.ajout {
     position: absolute;
     top: 140%;
     margin-left: 02%;
@@ -249,19 +263,23 @@ body {
     white-space: nowrap;
     overflow-x: auto;
 }
-.poulet{
+
+.poulet {
     width: 20%;
     left: 2%;
 }
-.poulet img , .lv img , .lc img , .ap img , .fc img{
-    
-   border-radius: 5%;
-   filter: saturate(120%) brightness(80%);
-   background-image: linear-gradient(to top,black, transparent);
-   
-   
+
+.poulet img,
+.lv img,
+.lc img,
+.ap img,
+.fc img {
+    border-radius: 5%;
+    filter: saturate(120%) brightness(80%);
+    background-image: linear-gradient(to top, black, transparent);
 }
-.poulet p{
+
+.poulet p {
     position: absolute;
     font-weight: bold;
     transform: translate(-50%, -50%);
@@ -269,12 +287,14 @@ body {
     left: 10%;
     color: white;
 }
-.lv{
+
+.lv {
     width: 20%;
     left: 20%;
     margin-left: 4%;
 }
-.lv p{
+
+.lv p {
     position: absolute;
     font-weight: bold;
     transform: translate(-50%, -50%);
@@ -283,12 +303,13 @@ body {
     color: white;
 }
 
-.lc{
+.lc {
     width: 20%;
     left: 35%;
     margin-left: 4%;
 }
-.lc p{
+
+.lc p {
     position: absolute;
     font-weight: bold;
     transform: translate(-50%, -50%);
@@ -296,13 +317,14 @@ body {
     left: 60%;
     color: white;
 }
-.ap{
+
+.ap {
     width: 20%;
     left: 45%;
     margin-left: 4%;
 }
 
-.ap p{
+.ap p {
     position: absolute;
     font-weight: bold;
     transform: translate(-50%, -50%);
@@ -310,12 +332,14 @@ body {
     left: 80%;
     color: white;
 }
-.fc{
+
+.fc {
     width: 20%;
     left: 20%;
     margin-left: 4%;
 }
-.fc p{
+
+.fc p {
     position: absolute;
     font-weight: bold;
     transform: translate(-50%, -50%);
@@ -323,37 +347,42 @@ body {
     left: 80%;
     color: white;
 }
-.cp{
+
+.cp {
     width: 50%;
     height: auto;
-    background-color:  rgba(38, 89, 195, 0.58);
+    background-color: rgba(38, 89, 195, 0.58);
     display: flex;
     position: absolute;
     top: 165%;
     left: 25%;
     border-radius: 2%;
 }
-.cp p{
+
+.cp p {
     font-size: 25px;
     color: white;
 }
-.cp img{
+
+.cp img {
     filter: saturate(120%) brightness(100%);
     margin-top: 6%;
     margin-left: 5%;
     border-radius: 10%;
 }
 
-.av{
+.av {
     position: absolute;
     top: 190%;
     margin-left: 5%;
     font-size: 30px;
 }
-.avance{
+
+.avance {
     display: flex;
 }
-.p{
+
+.p {
     width: 20%;
     height: 300px;
     position: absolute;
@@ -363,15 +392,17 @@ body {
     margin-left: 2%;
     display: flex;
     flex-direction: column;
-    
 }
-.p img{
+
+.p img {
     margin-left: 20%;
 }
-.p p{
+
+.p p {
     margin-left: 10%;
 }
-.c{
+
+.c {
     width: 20%;
     height: 300px;
     position: absolute;
@@ -382,18 +413,20 @@ body {
     display: flex;
     flex-direction: column;
     margin-left: 25%;
-    
 }
-.c img{
+
+.c img {
     margin-left: 20%;
     border-radius: 10%;
     margin-top: 3%;
 }
-.c p{
+
+.c p {
     margin-left: 10%;
     margin-top: 8%;
 }
-.t{
+
+.t {
     width: 20%;
     height: 300px;
     position: absolute;
@@ -404,19 +437,20 @@ body {
     display: flex;
     flex-direction: column;
     margin-left: 50%;
-    
 }
 
-.t img{
+.t img {
     margin-left: 20%;
     border-radius: 10%;
     margin-top: 3%;
 }
-.t p{
+
+.t p {
     margin-left: 10%;
     margin-top: 8%;
 }
-.f{
+
+.f {
     width: 20%;
     height: 300px;
     position: absolute;
@@ -427,19 +461,20 @@ body {
     display: flex;
     flex-direction: column;
     margin-left: 75%;
-    
 }
-.f img{
+
+.f img {
     margin-left: 20%;
     border-radius: 10%;
     margin-top: 3%;
 }
-.f p{
+
+.f p {
     margin-left: 10%;
     margin-top: 8%;
 }
 
-.footer{
+.footer {
     position: absolute;
     top: 250%;
     width: 100%;
