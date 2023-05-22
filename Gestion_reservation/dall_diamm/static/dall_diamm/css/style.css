@@ -1,0 +1,105 @@
+.header {
+    position: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 50%;
+    background-image: url(../images/myback.jpg);
+}
+
+.textHeader {
+    text-align: justify;
+    font-style: oblique;
+    right: 62%;
+    margin: 30px;
+}
+
+.header2 {
+    background-color: aliceblue;
+    height: 81%;
+    width: 85%;
+    border-radius: 20px;
+    margin: 30px;
+}
+
+.barre-recherche {
+    font-size: large;
+    color: azure;
+    right: 132px;
+    margin-left: 82px;
+    margin-top: 30px;
+}
+
+.descip {
+    color: azure;
+    margin-top: 5%;
+    text-align: center;
+}
+
+.overflow-x-scroll {
+    overflow-x: scroll
+}
+
+.imggg {
+    width: 24%;
+    height: 308px;
+    margin-top: 105px;
+    flex: 0 0 auto;
+    margin-right: 10px;
+    margin-left: 28px;
+}
+
+.reper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 65%;
+    text-align: center;
+    white-space: nowrap;
+    overflow-x: scroll;
+    overflow-y: clip;
+    gap: 10px;
+    display: flex;
+    overflow-x: scroll;
+    background-image: linear-gradient(to top, white, transparent);
+}
+
+.reper::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    background-color: transparent;
+}
+
+.imggg {
+    box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 10%;
+    flex: 0 0 auto;
+    width: 300px;
+    height: 330px;
+    /* Adjust the width as per your requirements */
+    margin-right: 10px;
+    border: beige 1px solid;
+}
+
+.imggg img {
+    width: 100%;
+    border-radius: 10%;
+    height: auto;
+    object-fit: cover;
+}
+
+.descp {
+    color: #445667;
+    font-size: 17Px;
+    height: auto;
+    margin: auto;
+}
+
+.descp p {
+    text-transform: capitalize;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-align: left;
+}

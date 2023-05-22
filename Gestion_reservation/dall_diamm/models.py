@@ -67,7 +67,7 @@ for key, values in contenu.items():
     chmb = chambre(nom_chmb=nom_chambre, prix_chmb=prix_chambre, disponible=disponibilite)
     chmb.save()
 
-class reserver_chambre(models.Model):
-    date_reservation=models.DateField()
-    id_p=models.ForeignKey(personne,on_delete=models.CASCADE)
-    id_c=models.ForeignKey(chambre,on_delete=models.CASCADE)
+# class reserver_chambre(models.Model):
+#     date_reservation=models.DateField()
+#     id_p=models.ForeignKey(personne,on_delete=models.CASCADE)
+#     id_c=models.ForeignKey(chambre,on_delete=models.CASCADE)

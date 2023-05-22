@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import voiture,chambre,personne,reserver_chambre
+from .models import voiture,chambre,personne
 
 
 class Adminvoiture(admin.ModelAdmin):
@@ -19,5 +19,4 @@ class Adminpersonne(admin.ModelAdmin):
 admin.site.register(voiture,Adminvoiture)
 admin.site.register(chambre,Adminchambre)
 admin.site.register(personne,Adminpersonne)
-admin.site.register(reserver_chambre)
 
