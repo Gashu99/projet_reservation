@@ -21,5 +21,5 @@ def form_inscription(request):
     return HttpResponse(template.render(context,request))
 
 def listechambre(request):
-    context={"chambre":chambre.objects.all()}
+    context={"chambre":chambre.objects.all()[:9]}
     return render(request,"dall_diamm/listechambre.html",context)

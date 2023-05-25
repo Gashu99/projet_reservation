@@ -14,7 +14,7 @@ class Migration(migrations.Migration):
             name="personne",
             fields=[
                 (
-                    "id",
+                    "id_p",
                     models.BigAutoField(
                         auto_created=True,
                         primary_key=True,

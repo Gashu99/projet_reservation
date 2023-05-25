@@ -1,19 +1,46 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'dall_diamm/css/stylechambre.css' %}">
     <title>Document</title>
 </head>
 <body>
-    <ul>
-        {% for ch in chambre %}
-        <li>
-            {{ch.nom_chmb }}
-            {{ch.prix_chmb}}
-        </li>
-        {% endfor %}
-    </ul>
+    <div class="back">
+    <img src="{% static 'dall_diamm/images/chambreback.jpg' %}" alt="" class="backch">
+    </div>
+    <div class="entete">
+        <div class="DD" >Dall Diamm</div>
+        <div class="meslien">
+            <a href="" >Acceuil &NonBreakingSpace;</a>
+            <a href="{% url 'listechambre' %}"  >Chambre &NonBreakingSpace;</a>
+            <a href="{% url 'voiture' %}"  >Vehicules &NonBreakingSpace;</a>
+            <a href=""  >Restaurant &NonBreakingSpace;</a>
+            <a href="{% url 'form_inscription' %}"  >Inscription &NonBreakingSpace;</a>
+            <a href="" >Connection &NonBreakingSpace;</a>
+    </div>
+    <div class="LUC">
+        <p class="luc">LOUER UNE CHAMBRE </p>
+        <input type="search" placeholder="search" >
+    </div>
+   
+
+    <div class="all">
+    
+    {% for ch in chambre %}
+    <div class="info">
+        <img src="{% static 'dall_diamm/images/chambre.jpg' %}" alt="" width="25%">
+            <div class="description">
+                {{ch.nom_chmb }}<br>
+                {{ch.prix_chmb}}
+            </div>
+            
+    </div>
+    {% endfor %}
+    
+</div>
 </body>
 </html>

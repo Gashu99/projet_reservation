@@ -14,7 +14,7 @@ class Migration(migrations.Migration):
             name="chambre",
             fields=[
                 (
-                    "id",
+                    "id_c",
                     models.BigAutoField(
                         auto_created=True,
                         primary_key=True,
