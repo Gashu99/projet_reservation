@@ -26,16 +26,18 @@
         <p class="luc">LOUER UNE CHAMBRE </p>
         <input type="search" placeholder="search" >
     </div>
-   
+
+    <p class="nvp"><em>Nous vous proposons:</em></p>
+    <p class="mc"><em>Meilleures Chambres</em></p>
 
     <div class="all">
     
     {% for ch in chambre %}
     <div class="info">
-        <img src="{% static 'dall_diamm/images/chambre.jpg' %}" alt="" width="25%">
+        <img src="{% static 'dall_diamm/images/chambre.jpg' %}" alt="" width="80%">
             <div class="description">
-                {{ch.nom_chmb }}<br>
-                {{ch.prix_chmb}}
+               <p> {{ch.nom_chmb }}</p><br>
+                <a href="">{{ch.prix_chmb}}</a>
             </div>
             
     </div>

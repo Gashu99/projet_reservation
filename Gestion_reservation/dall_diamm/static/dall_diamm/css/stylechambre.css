@@ -27,11 +27,32 @@ body{
 }
 .info img{
     margin: 7%;
+    border-radius: 10%;
 }
-.description{
-    width: 25%;
+.description {
+    width: 100%;
+}
+.description a {
+    text-decoration: none;
+    margin-left:2% ;
 }
 
+.nvp{
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 250px;
+    margin-left: 4%;
+    width: 100%;   
+}
+.mc{
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 350px;
+    margin-left: 4%;
+    width: 100%;   
+}
 .entete {
     width: 100%;
     position: absolute;
