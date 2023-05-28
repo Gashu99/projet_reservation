@@ -1,23 +1,58 @@
+{% load static %}
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title> </title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
-    </head>
-    <body>
-        <h2> Bienvenue </h2>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-        
-        <script src="" async defer></script>
-    </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'dall_diamm/css/stylechambre.css' %}">
+    <title>Document</title>
+</head>
+<body>
+    <div class="back">
+    <img src="{% static 'dall_diamm/images/chambreback.jpg' %}" alt="" class="backch">
+    </div>
+    <div class="entete">
+        <div class="DD" >Dall Diamm</div>
+        <div class="meslien">
+            <a href="{% url 'index' %}" >Acceuil &NonBreakingSpace;</a>
+            <a href="{% url 'listechambre' %}"  >Chambre &NonBreakingSpace;</a>
+            <a href="{% url 'voiture' %}"  >Vehicules &NonBreakingSpace;</a>
+            <a href=""  >Restaurant &NonBreakingSpace;</a>
+            <a href="{% url 'form_inscription' %}"  >Inscription &NonBreakingSpace;</a>
+            <a href="" >Connection &NonBreakingSpace;</a>
+    </div>
+    <div class="LUC">
+        <p class="luc">LOUER UNE CHAMBRE </p>
+        <input type="search" placeholder="search" >
+    </div>
+
+    <p class="nvp"><em>Nous vous proposons:</em></p>
+    <p class="mc"><em>Meilleures Chambres</em></p>
+    
+    <div class="all">
+    
+    
+    <div class="info">
+        <img src="{% static 'dall_diamm/images/chambre.jpg' %}" alt="" width="80%">
+            <div class="description">
+               <p> {{chambre.nom_chmb }}</p><br>
+                <p>{{chambre.prix_chmb}}</p>
+            </div>
+            
+    </div>
+   
+   
+    
+    </div>
+  
+    <div>
+       
+   </div>
+  
+    
+    <div class="footer">
+        <p>Dall <br> Diamm</p>
+    </div>
+</body>
 </html>

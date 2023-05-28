@@ -47,6 +47,8 @@ class chambre(models.Model):
         return self.nom_chmb
 
 
+
+
 import json
 
 with open('/home/fatou/Bureau/projet_reservation/Gestion_reservation/dall_diamm/data_room.json') as fichier:
@@ -67,7 +69,8 @@ for key, values in contenu.items():
     chmb = chambre(nom_chmb=nom_chambre, prix_chmb=prix_chambre, disponible=disponibilite)
     chmb.save()
 
-# class reserver_chambre(models.Model):
-#     date_reservation=models.DateField()
-#     id_p=models.ForeignKey(personne,on_delete=models.CASCADE)
-#     id_c=models.ForeignKey(chambre,on_delete=models.CASCADE)
+#RESERVATION DE MES CHAMBRES
+class reserver_chambre(models.Model):
+    date_reservation=models.DateField()
+    id_p=models.ForeignKey(personne,on_delete=models.CASCADE)
+    id_c=models.ForeignKey(chambre,on_delete=models.CASCADE)
