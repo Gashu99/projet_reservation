@@ -35,7 +35,7 @@
     <p class="text">Meilleur Site De Réservation Au Sénégal </p>
     <p class="activity"> <em> Nos Activités</em></p>
     <div class="mesimg">
-        <div class=""><img src="{% static 'dall_diamm/images/chambre.jpg' %}" alt=""  class="chambre"><span class="RC">Reserver Chambre</span></div>
+        <a class="" href="{% url 'listechambre' %}"><img src="{% static 'dall_diamm/images/chambre.jpg' %}" alt=""  class="chambre"><span class="RC">Reserver Chambre</span></a>
         <div><img src="{% static 'dall_diamm/images/restaurant.jpg' %}" alt="" class="restaurant"><span class="RR"> Restaurant</span></div>
         <div><img src="{% static 'dall_diamm/images/chambre.jpg' %}" alt=""  class="voiture"><span></span></div>
         <div><img src="{% static 'dall_diamm/images/chambre.jpg' %}" alt=""><span></span></div>
@@ -71,16 +71,16 @@
         <div class="poulet"><img src="{% static 'dall_diamm/images/poulet.jpg' %}" alt="" width="100%">
         <p>Commander un repas</p>
         </div>
-        <div class="lv"><img src="{% static 'dall_diamm/images/louervoiture.jpg' %}" alt="" width="100%" height="200px">
+        <a class="lv" href="{% url 'voiture' %}"><img src="{% static 'dall_diamm/images/louervoiture.jpg' %}" alt="" width="100%" height="200px">
             <p>Louer Une Voiture</p>
-            </div>
-        <div class="lc"><img src="{% static 'dall_diamm/images/louerchambre.jpg' %}" alt="" width="100%" height="200px">
+        </a>
+        <a class="lc" href="{% url 'listechambre' %}"><img src="{% static 'dall_diamm/images/louerchambre.jpg' %}" alt="" width="100%" height="200px">
             <p>Louer Une Chambre</p>
-            </div>
+        </a>
 
-        <div class="ap"><img src="{% static 'dall_diamm/images/parc.jpg' %}" alt="" width="100%" height="200px">
+        <a class="ap" href=""><img src="{% static 'dall_diamm/images/parc.jpg' %}" alt="" width="100%" height="200px">
             <p>Aller au Parc</p>
-         </div>
+        </a>
 
     </div>
     <div class="cp">
