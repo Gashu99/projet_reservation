@@ -14,10 +14,11 @@ body {
 
 .entete {
     width: 100%;
-    position: absolute;
+    position: fixed;
     top: 5px;
     display: flex;
     justify-content: space-between;
+    
 }
 
 .DD {

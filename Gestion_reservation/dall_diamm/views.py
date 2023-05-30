@@ -16,6 +16,7 @@ def voiture(request):
 
 
 
+
 def form_inscription(request):
     if request.method == 'POST':
         nm = request.POST.get('nom')
@@ -26,7 +27,6 @@ def form_inscription(request):
         # Effectuez ici le traitement des données du formulaire
         pers=personne(nom=nm,prenom=prenom,email=email,Tel='776777622')
         pers.save()
-      
         return redirect("index")
     
     else:
