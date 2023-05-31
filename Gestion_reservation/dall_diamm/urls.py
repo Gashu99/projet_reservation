@@ -6,6 +6,7 @@ from . import views
 urlpatterns=[
     path('',views.index,name='index'),
     path('form_inscription/',views.form_inscription,name='form_inscription'),
+    path('connexion/',views.connexion,name='connexion'),
     path('listechambre/',views.listechambre,name='listechambre'),
     path('voiture/',views.voiture,name='voiture'),
     path('<int:chambre_id>/',views.show,name='show'),

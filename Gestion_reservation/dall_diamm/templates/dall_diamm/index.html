@@ -21,7 +21,7 @@
             <a href="{% url 'voiture' %}"  >Vehicules &NonBreakingSpace;</a>
             <a href=""  >Restaurant &NonBreakingSpace;</a>
             <a href="{% url 'form_inscription' %}"  >Inscription &NonBreakingSpace;</a>
-            <a href="" >Connection &NonBreakingSpace;</a>
+            <a href="{% url 'connexion' %}" >Connection &NonBreakingSpace;</a>
         </div>
 
     </div>
@@ -37,17 +37,15 @@
     <div class="mesimg">
         <a class="" href="{% url 'listechambre' %}"><img src="{% static 'dall_diamm/images/chambre.jpg' %}" alt=""  class="chambre"><span class="RC">Reserver Chambre</span></a>
         <div><img src="{% static 'dall_diamm/images/restaurant.jpg' %}" alt="" class="restaurant"><span class="RR"> Restaurant</span></div>
-        <div><img src="{% static 'dall_diamm/images/chambre.jpg' %}" alt=""  class="voiture"><span></span></div>
-        <div><img src="{% static 'dall_diamm/images/chambre.jpg' %}" alt=""><span></span></div>
-        <div><img src="{% static 'dall_diamm/images/restaurant.jpg' %}" alt=""><span></span></div>
-        {% comment %}<div><img src="{% static 'dall_diamm/images/restaurant.jpg' %}" alt=""><span></span></div>
-        <div><img src="{% static 'dall_diamm/images/chambre.jpg' %}" alt=""><span></span></div>{% endcomment %}
+        <div><img src="{% static 'dall_diamm/images/caract.jpg' %}" alt=""  class="voiture"><span></span></div>
+        <div><img src="{% static 'dall_diamm/images/louerchambre.jpg' %}" alt=""><span></span></div>
+        <div><img src="{% static 'dall_diamm/images/caractivite.jpg' %}" alt=""><span></span></div>
     </div>
     
     <p class="activity1"> <em> Vos Activités</em></p>
     <div class=" vosactivites">
         <div class="carte1">
-            <img src="{% static 'dall_diamm/images/chambre.jpg' %}" alt="" width="60%">
+            <img src="{% static 'dall_diamm/images/voiture.jpg' %}" alt="" width="60%">
             <p>Chambre 214 <br><br> Votre chambre <br><br>
             <button > Demander un service </button><br><br>
             <button >Ouvrir l'agenda </button></p>

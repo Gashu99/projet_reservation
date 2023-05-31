@@ -24,12 +24,13 @@
     </div>
     <div class="LUC">
         <p class="luc">LOUER UNE CHAMBRE </p>
-        <input type="search" placeholder="prix" name="chercher" >
+        
+        <input type="search" placeholder="prix" name="chercher"  >
     </div>
 
     <p class="nvp"><em>Nous vous proposons:</em></p>
     <p class="mc"><em>Meilleures Chambres</em></p>
-    
+
     <div class="all">
     
     {% for ch in chambre %}
@@ -37,8 +38,8 @@
         <img src="{% static 'dall_diamm/images/chambre.jpg' %}" alt="" width="80%">
             <div class="description">
                <p> {{ch.nom_chmb }}</p><br>
-                <a href="">{{ch.prix_chmb}}</a>
-                <a href="{% url 'formreservation_chambre' %}">Reserver </a>
+                <a href="{% url 'show' chambre_id=chambre.id  %}">{{ch.prix_chmb}}</a>
+                <a href="{% url 'formreservation_chambre'  %}">Reserver </a>
             </div>
             
     </div>

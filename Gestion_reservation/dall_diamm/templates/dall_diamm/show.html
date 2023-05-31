@@ -29,22 +29,22 @@
 
     <p class="nvp"><em>Nous vous proposons:</em></p>
     <p class="mc"><em>Meilleures Chambres</em></p>
-    
+    {% include 'dall_diamm/formreservation_chambre.html' %}
+    {% comment %}
     <div class="all">
     
     
     <div class="info">
         <img src="{% static 'dall_diamm/images/chambre.jpg' %}" alt="" width="80%">
             <div class="description">
-               <p> {{chambre.nom_chmb }}</p><br>
-                <p>{{chambre.prix_chmb}}</p>
+               
             </div>
             
     </div>
    
    
     
-    </div>
+    </div>{% endcomment %}
   
     <div>
        

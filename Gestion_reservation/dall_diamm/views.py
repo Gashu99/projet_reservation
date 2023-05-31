@@ -35,7 +35,16 @@ def form_inscription(request):
 
    
 
+def connexion(request):
+    context={}
+    template=loader.get_template("dall_diamm/connexion.html")
+    return HttpResponse(template.render(context,request))
+
+
+
 def listechambre(request):
+    valeur=request.POST.get('chercher')
+    print(valeur)
     context={"chambre":chambre.objects.all()[:9]}
     return render(request,"dall_diamm/listechambre.html",context)
 
