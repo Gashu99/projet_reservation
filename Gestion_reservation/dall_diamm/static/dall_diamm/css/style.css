@@ -1,22 +1,59 @@
 .header {
-    position: fixed;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    width: 100%;
-    height: 50%;
-    background-image: url(../images/myback.jpg);
+    background-image: url("../images/moncar.jpg");
+    width: auto;
+    color: black;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.nav {
+    font-size: 18px;
+}
+
+.success {
+    background-color: rgb(14, 200, 138);
+    font-size: 20px !important;
+    font-style: oblique;
+    animation-name: fadeOut;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        display: none;
+    }
+}
+
+.class1 {
+    margin-top: 23px;
 }
 
 .textHeader {
     text-align: justify;
     font-style: oblique;
     right: 62%;
-    margin: 30px;
+    margin: 100px;
+}
+
+.descip {
+    margin-top: 20px;
 }
 
 .header2 {
-    background-color: aliceblue;
     height: 81%;
     width: 85%;
     border-radius: 20px;
@@ -25,15 +62,13 @@
 
 .barre-recherche {
     font-size: large;
-    color: azure;
     right: 132px;
-    margin-left: 82px;
-    margin-top: 30px;
+    margin-left: 122px;
+    margin-top: 70px;
 }
 
-.descip {
-    color: azure;
-    margin-top: 5%;
+.class2 {
+    margin-top: 15%;
     text-align: center;
 }
 
@@ -50,12 +85,20 @@
     margin-left: 28px;
 }
 
+.plusrech {
+    position: absolute;
+    margin-left: 1%;
+    margin-top: 74px;
+    font-size: large;
+    font-weight: 200;
+    font-style: oblique;
+}
+
 .reper {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    position: absolute;
-    top: 65%;
+    top: 45%;
     text-align: center;
     white-space: nowrap;
     overflow-x: scroll;
@@ -76,9 +119,8 @@
     box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.2);
     border-radius: 10%;
     flex: 0 0 auto;
-    width: 300px;
-    height: 330px;
-    /* Adjust the width as per your requirements */
+    width: 407px;
+    height: 457px;
     margin-right: 10px;
     border: beige 1px solid;
 }
@@ -102,4 +144,115 @@
     font-family: sans-serif;
     font-weight: bold;
     text-align: left;
+}
+
+.kKeWfe {
+    cursor: pointer;
+    border-radius: 23px;
+    width: 407px;
+    height: 457px;
+    display: flex;
+    flex-flow: column wrap;
+    background-image: linear-gradient(to top, white, transparent);
+    text-align: left;
+}
+
+.descp a {
+    border: none;
+    background-color: transparent;
+    color: black;
+    text-decoration: none;
+}
+
+.valise {
+    width: 56px;
+    color: black;
+    text-decoration: none;
+}
+
+.km {
+    width: 56px;
+    color: black;
+    text-decoration: none;
+}
+
+.humain {
+    width: 56px;
+    color: black;
+    text-decoration: none;
+}
+
+.despVV {
+    display: flex;
+    justify-content: space-between;
+    margin-top: -26px;
+}
+
+.iconss {
+    display: flex;
+    justify-content: space-between;
+    white-space: nowrap;
+    margin-top: -21px;
+}
+
+.decp11 {
+    font-size: larger;
+    font-weight: bold;
+    font-style: italic;
+    font: optional;
+    display: flex;
+    justify-content: space-between;
+    white-space: nowrap;
+    margin-top: -34px;
+    margin-left: 216px;
+}
+
+.gJktXX {
+    font-size: larger;
+    font-weight: bold;
+    font-style: oblique;
+    font: optional;
+}
+
+.eee {
+    margin-top: -14px;
+    margin-left: -5px;
+}
+
+.trans {
+    margin-left: -9px;
+    color: black;
+    text-decoration: none;
+}
+
+.containe {
+    height: 164px;
+}
+
+.makmod {
+    text-decoration: none;
+    margin-top: 34px;
+    color: black;
+    margin-left: 25px;
+}
+
+.place {
+    margin-top: -5px;
+    color: black;
+    text-decoration: none;
+}
+
+.TouteDescrp {
+    width: 96%;
+    margin-top: 115px;
+}
+
+.humain {
+    margin-left: 23px;
+    color: black;
+    text-decoration: none;
+}
+
+.makmod {
+    margin-top: 34px;
 }

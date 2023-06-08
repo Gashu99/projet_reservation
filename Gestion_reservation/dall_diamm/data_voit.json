@@ -1,0 +1,135 @@
+{
+    "voiture_1": {
+        "annee": 1997,
+        "capacity": 5,
+        "couleur": "Gris",
+        "fuel_type": "Essence",
+        "image": "dall_diamm/images/voitures/13.png",
+        "marque": "Toyota",
+        "model": "Corolla",
+        "prix": 100000,
+        "transmission": "Manuelle"
+    },
+    "voiture_10": {
+        "annee": 2014,
+        "capacity": 3,
+        "couleur": "Gris",
+        "fuel_type": "Essence",
+        "image": "dall_diamm/images/voitures/1.png",
+        "marque": "Ford",
+        "model": "Focus",
+        "prix": 150000,
+        "transmission": "Automatique"
+    },
+    "voiture_11": {
+        "annee": 2008,
+        "capacity": 2,
+        "couleur": "Gris",
+        "fuel_type": "Gazoil",
+        "image": "dall_diamm/images/voitures/14.png",
+        "marque": "Hyundai",
+        "model": "Tucson",
+        "prix": 123000,
+        "transmission": "Manuelle"
+    },
+    "voiture_12": {
+        "annee": 1927,
+        "capacity": 1,
+        "couleur": "Gris",
+        "fuel_type": "Essence",
+        "image": "dall_diamm/images/voitures/3.png",
+        "marque": "Ford",
+        "model": "Mustang",
+        "prix": 140000,
+        "transmission": "Manuelle"
+    },
+    "voiture_13": {
+        "annee": 2021,
+        "capacity": 1,
+        "couleur": "Jaune",
+        "fuel_type": "Essence",
+        "image": "dall_diamm/images/voitures/5.png",
+        "marque": "Kia",
+        "model": "Sorento",
+        "prix": 120000,
+        "transmission": "Automatique"
+    },
+    "voiture_14": {
+        "annee": 2021,
+        "capacity": 2,
+        "couleur": "white",
+        "fuel_type": "Gazoil",
+        "image": "dall_diamm/images/voitures/6.png",
+        "marque": "BMW",
+        "model": "Series 5",
+        "prix": 110000,
+        "transmission": "Automatique"
+    },
+    "voiture_15": {
+        "annee": 1901,
+        "capacity": 2,
+        "couleur": "Noir",
+        "fuel_type": "Essence",
+        "image": "dall_diamm/images/voitures/9.png",
+        "marque": "BMW",
+        "model": "X3",
+        "prix": 193000,
+        "transmission": "Automatique"
+    },
+    "voiture_16": {
+        "annee": 1951,
+        "capacity": 5,
+        "couleur": "Noir",
+        "fuel_type": "Gazoil",
+        "image": "dall_diamm/images/voitures/10.png",
+        "marque": "Mercedes-Benz",
+        "model": "E-Class",
+        "prix": 90000,
+        "transmission": "Automatique"
+    },
+    "voiture_17": {
+        "annee": 1972,
+        "capacity": 4,
+        "couleur": "Blanc",
+        "fuel_type": "Gazoil",
+        "image": "dall_diamm/images/voitures/11.png",
+        "marque": "Toyota",
+        "model": "Corolla",
+        "prix": 70000,
+        "transmission": "Automatique"
+    },
+    "voiture_18": {
+        "annee": 2014,
+        "capacity": 2,
+        "couleur": "Blanc",
+        "fuel_type": "Gazoil",
+        "image": "dall_diamm/images/voitures/12.png",
+        "marque": "Kia",
+        "model": "Optima",
+        "prix": 128000,
+        "transmission": "Automatique"
+    },
+    "voiture_19": {
+        "annee": 1907,
+        "capacity": 2,
+        "couleur": "Gris",
+        "fuel_type": "Hybride",
+        "image": "dall_diamm/images/voitures/13.png",
+        "marque": "Hyundai",
+        "model": "Sonata",
+        "prix": 50000,
+        "transmission": "Manuelle"
+    },
+    "voiture_2": {
+        "annee": 1970,
+        "capacity": 2,
+        "couleur": "Noir",
+        "fuel_type": "Essence",
+        "image": "dall_diamm/images/voitures/14.png",
+        "marque": "Audi",
+        "model": "A4",
+        "prix": 123000,
+        "transmission": "Manuelle"
+
+    }
+}

@@ -9,26 +9,6 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="back">
-    <img src="{% static 'dall_diamm/images/chambreback.jpg' %}" alt="" class="backch">
-    </div>
-    <div class="entete">
-        <div class="DD" >Dall Diamm</div>
-        <div class="meslien">
-            <a href="{% url 'index' %}" >Acceuil &NonBreakingSpace;</a>
-            <a href="{% url 'listechambre' %}"  >Chambre &NonBreakingSpace;</a>
-            <a href="{% url 'voiture' %}"  >Vehicules &NonBreakingSpace;</a>
-            <a href=""  >Restaurant &NonBreakingSpace;</a>
-            <a href="{% url 'form_inscription' %}"  >Inscription &NonBreakingSpace;</a>
-            <a href="" >Connection &NonBreakingSpace;</a>
-    </div>
-    <div class="LUC">
-        <p class="luc">LOUER UNE CHAMBRE </p>
-        <input type="search" placeholder="search" >
-    </div>
-
-    <p class="nvp"><em>Nous vous proposons:</em></p>
-    <p class="mc"><em>Meilleures Chambres</em></p>
     {% include 'dall_diamm/formreservation_chambre.html' %}
     {% comment %}
     <div class="all">

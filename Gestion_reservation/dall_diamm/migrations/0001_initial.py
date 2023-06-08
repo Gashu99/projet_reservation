@@ -65,14 +65,6 @@ class Migration(migrations.Migration):
             ],
         ),
         migrations.CreateModel(
-            name="voiture",
-            fields=[
-                ("num_voit", models.IntegerField(primary_key=True, serialize=False)),
-                ("nom_voit", models.CharField(max_length=200)),
-                ("prix", models.DecimalField(decimal_places=2, max_digits=8)),
-            ],
-        ),
-        migrations.CreateModel(
             name="reserver_chambre",
             fields=[
                 (

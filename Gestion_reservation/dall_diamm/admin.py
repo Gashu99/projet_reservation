@@ -2,9 +2,6 @@ from django.contrib import admin
 from .models import voiture,chambre,personne,reserver_chambre
 
 
-class Adminvoiture(admin.ModelAdmin):
-    list_display=('num_voit','nom_voit','prix')
-    list_filter=['nom_voit']
 
 
 class Adminchambre(admin.ModelAdmin):
@@ -26,7 +23,6 @@ class Adminreserver_chambre(admin.ModelAdmin):
     get_nom_personne.short_description = 'Nom de la personne'
 
 # # Register your models here.
-admin.site.register(voiture,Adminvoiture)
 admin.site.register(chambre,Adminchambre)
 admin.site.register(personne,Adminpersonne)
 admin.site.register(reserver_chambre,Adminreserver_chambre)
