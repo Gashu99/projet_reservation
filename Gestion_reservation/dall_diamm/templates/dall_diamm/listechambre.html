@@ -37,6 +37,7 @@
     <div class="info">
         <img src="{% static 'dall_diamm/images/chambre.jpg' %}" alt="" width="80%">
             <div class="description">
+               <p><strong>chambre numero: </strong> {{ch.id_c}}</p> 
                <p> {{ch.nom_chmb }}</p><br>
                 <a href="{% url 'show' ch.id_c %}">{{ch.prix_chmb}}</a>
                 <a href="{% url 'formreservation_chambre'   %}">Reserver </a>
@@ -48,6 +49,11 @@
     </div>
     <div class="footer">
         <p>Dall <br> Diamm</p>
+    </div>
+
+
+    <div class="footer">
+        {% include 'dall_diamm/footer.html' %}
     </div>
 </body>
 </html>

@@ -3,13 +3,14 @@ background-color: white;
 
 }
 form{
-    width: 30%;
-    background-color: moccasin;
+    width: 50%;
+    background-color: white;
     margin-left: 30%;
     margin-top: 6%;
     border-radius: 10%;
     box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.44);
-    height: 700px;
+    height: 670px;
+    
 }
 label{
     margin: 6%;
@@ -18,28 +19,31 @@ label{
     font-weight: bold;
   
 }
-.username{
-   margin-top: 3%;
-    width:100px;
-    margin-left: 2%;
-    
-   
-}
-input{
-    width: 25%;
-    
-    margin-top:8% ;
-    margin-left: 3%;
 
+input{
+    width: 35%;
+   margin: 3%;
 }
 
 button{
-    margin: 5%;
+    margin-top: 7%;
     color: white;
-    background-color: black;
-    width: 50%;
-    border-radius: 20%;
-    height: 50px;
-    margin-left: 7%;
+    background-color: #808080;
+    border-radius: 15%;
+    width: 100%;
+    height: 74px;
+    
     margin-top: 5%;
+}
+.username {
+    margin-left: 15%;
+}
+.prenom{
+    margin-left: 12%;
+}
+.tel{
+    margin-left: 5%;
+}
+.mail{
+    margin-left: 13%;
 }

@@ -16,7 +16,7 @@ body{
     flex-direction: row;
     position: absolute;
     flex-wrap: wrap;
-    margin-left: 10%;
+    margin-left: 16%;
     top: 510px;
 }
 .info {
@@ -98,18 +98,7 @@ body{
     margin-right: 10%;
     border-radius: 10px;
 }
-.footer{
-    width: 100%;
-    height: 250px;
-    position: absolute;
-    top: 1800px;
-    background-color: black;
-}
-.footer p{
-    color: white;
-    font-size: 20px;
-    margin-left: 2%;
-}
+
 
 .br{
     position: absolute;
@@ -119,4 +108,13 @@ body{
     color: white;
     width: 20%;
     height: 50px;
+}
+
+
+.footer {
+    position: absolute;
+    top: 1800px;
+    width: 100%;
+    height: 200px;
+    background-color: black;
 }

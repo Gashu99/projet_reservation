@@ -3,6 +3,7 @@ from django.http import HttpResponse
 from django.template import loader
 from .models import chambre,personne,reserver_chambre,voiture
 from .forms import formreservation_chambres
+from django.core.mail import send_mail
 # Create your views here.
 def index(request):
     context={}
@@ -61,6 +62,13 @@ def form_inscription(request):
         email = request.POST.get('email')
         mdp=request.POST.get('motdepasse')
         cmdp=request.POST.get('confirmationmdp')
+        #Envoie de mail lors de l'inscription
+        subject = 'Hello'
+        message = 'This is a test email.'
+        from_email = 'gassamafatoubintou7@gmail.com'
+        recipient_list = [email]
+        send_mail(subject, message, from_email, recipient_list)
+
         # Effectuez ici le traitement des données du formulaire
         pers=personne(nom=nm,prenom=prenom,email=email,Tel='776777622')
         pers.save()
@@ -71,6 +79,17 @@ def form_inscription(request):
     return render(request, 'dall_diamm/form_inscription.html',context)
 
    
+
+
+#Pour l'envoie de message 
+def send_email(request):
+    subject = 'Hello'
+    message = 'This is a test email.'
+    from_email = 'your_email@example.com'
+    recipient_list = ['recipient1@example.com', 'recipient2@example.com']
+    
+    send_mail(subject, message, from_email, recipient_list)
+
 
 def connexion(request):
     context={}
@@ -98,16 +117,17 @@ def formreservation_chambre(request):
     if request.method=='POST':
         form=formreservation_chambres(request.POST)
         if form.is_valid():
+            id_ch=form.cleaned_data['numero_chambre']
             nom=form.cleaned_data['username']
             pre=form.cleaned_data['prenom']
-            pa=form.cleaned_data['password']
-            cpa=form.cleaned_data['confirmpassword']
             tel=form.cleaned_data['Tel']
             mail=form.cleaned_data['mail']
-            date_res=form.cleaned_data['dr']
+            date_res=form.cleaned_data['date_res']
             if personne.objects.filter(nom=nom,prenom=pre,email=mail,Tel=tel).exists():
+                ch=get_object_or_404(chambre, pk = id_ch)
                 pers=personne(nom=nom,prenom=pre,email=mail,Tel=tel)
-                resch=reserver_chambre(date_reservation=date_res,id_p=pers,id_c=ch)
+                pers.save()
+                resch=reserver_chambre.objects.create(date_reservation=date_res,id_p=pers,id_c=ch)
                 resch.save()
                 
                 return redirect("index")
