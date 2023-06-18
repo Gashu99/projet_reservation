@@ -364,3 +364,8 @@ a.button:hover {
     -moz-box-shadow: none;
     box-shadow: none;
 }
+
+.error {
+    color: red;
+    font-weight: bold;
+}

@@ -1,0 +1,104 @@
+{% load static %}
+
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width
+    , initial-scale=1">
+    <link rel="stylesheet" href="{% static 'dall_diamm/css/style_paiement.css' %}">
+    <title> dall_diamm</title>
+</head>
+
+<body>
+    <div>
+       
+        <div>
+            <button id="OM" onclick="i=1;affichageOM()">Orange money</button>
+            <button id="Wave" onclick="i=2;affichageWave()">Wave</button>
+            <button id="FM" onclick="i=3;affichageFM()">Free money</button>
+            <button id="valider" onclick="generer()">Valider</button>
+            <div class="qr_code" ></div>
+        </div>
+        
+    </div>
+
+    <script src="{% static 'dall_diamm/js/qrcode_min.js' %}"></script>
+    <script>
+        let valider = document.getElementById('valider')
+        let om = document.getElementById('OM')
+        let wave = document.getElementById('Wave')
+        let fm = document.getElementById('FM')
+        var test = getComputedStyle(valider)
+        function affichageOM(){
+            om.style.backgroundColor = "orange"
+            om.style.color = "white"
+            om.style.fontSize ="20px"
+            om.style.fontFamily = "Rubik"
+            om.style.borderRadius = "10px"
+            om.style.width = "90%"
+            // wave.style.width= "80%"
+            // wave.style.fontFamily = "Times New Roman"
+            // wave.style.fontWeight = "normal"
+            // wave.style.color="black"
+            // wave.style.borderRadius = "10px"
+            // wave.style.backgroundColor = "lightgray"
+            wave.style = test
+            fm.style = test
+        }
+        function affichageWave(){
+            wave.style.backgroundColor = "rgb(91, 188, 248)"
+            wave.style.color = "white"
+            wave.style.fontSize ="20px"
+            wave.style.fontFamily = "cursive"
+            wave.style.width = "90%"
+            om.style = test
+            fm.style = test
+        }
+        function affichageFM(){
+            fm.style.backgroundColor = "red"
+            fm.style.color = "white"
+            fm.style.fontSize ="20px"
+            fm.style.fontFamily = "Cookie"
+            fm.style.width = "90%"
+            wave.style = test
+            om.style = test
+        }
+        let i=0;
+        function genererQRCOM(){
+            var qr_code = document.querySelector('.qr_code')
+            qr_code.style.display = "flex"
+            qr_code.innerHTML = ""
+            new QRCode(qr_code,"https://www.orange.sn/orange-money-app")
+        }
+        function genererQRCWave(){
+            var qr_code = document.querySelector('.qr_code')
+            qr_code.style.display = "flex"
+            qr_code.innerHTML = ""
+            new QRCode(qr_code,"https://www.wave.com/fr/")
+        }
+        function genererQRCFM(){
+            var qr_code = document.querySelector('.qr_code')
+            qr_code.style.display = "flex"
+            qr_code.innerHTML = ""
+            new QRCode(qr_code,"https://www.free.sn/free-money")
+        }
+        function generer()
+        {
+            if(i==0)
+            alert('Veuillez choisir un mode de paiement')
+            else if(i==1)
+            genererQRCOM();
+            else if(i==2)
+            genererQRCWave();
+            else if(i==3)
+            genererQRCFM();
+        }
+    </script>
+
+
+</body>
+
+</html>

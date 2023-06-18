@@ -1,0 +1,224 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="{% static 'dall_diamm/css/style_restaurant.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <h1>Dall Diamm</h1>
+        <span class="links"><a href="/">Accueil</a><a href="/listechambre/">Chambres</a><a href="/voiture/">Véhicules</a><a href="#">Restaurant</a><a href="/form_inscription/">Inscription</a><a href="">Connection</a></span>
+    </header>
+    <img class = "background-img" src="{% static 'dall_diamm/images/wallpaperflare.com_wallpaper(19).jpg' %}" alt="">
+    <div class="container">
+        <h1 class="commander-un-repas" >Commander un repas</h1>
+        <div class="searchbar">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search rechercher-un-repas" viewBox="0 0 16 16">
+                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+            </svg>
+            <p class="rechercher-un-repas">rechercher un repas</p>
+            <button class="search-button">Search</button> 
+        </div>
+        <h2>Nous vous proposons</h2>
+    </div>
+
+    <div class="cards-n-title">
+        <span class="top-menu">Nos entrées</span>
+    <div class="cards">
+        <script>
+            function selectrepas(element) {
+                var div = document.createElement("div");
+                div.className = "blurrer";
+                document.body.appendChild(div);
+                element.parentElement.style.zIndex = "2000"; // Adjust the z-index value as needed
+            }
+        </script>
+        
+        
+{% for r in restaurant|slice:":9" %}
+    <div class="card">
+        <img class="img-cards" src="{{ r.img_plat }}" alt="">
+        <h3>{{ r.nom_plat }}</h3>
+        <div class="description">
+            Ratings: <span class = "rated" id="ratings{{ r.id_plat }}"></span>
+        </div>
+        <span class="prix">Price: {{ r.prix_plat }} fcfa</span>
+        <p>{{ r.description }}</p>
+        <button class="button-78" onclick="selectrepas(this)" role="button">Commander</button>
+
+    </div>
+
+    <script>
+        var ratings{{ r.id_plat }} = Math.floor(Math.random() * 5) + 5;
+        document.getElementById("ratings{{ r.id_plat }}").innerHTML = ratings{{ r.id_plat }};
+    </script>
+{% endfor %}
+        
+    </div>
+    </div>
+
+    <div class="cards-n-title">
+        <h2>Nos plats de resistance</h2>
+    <div class="cards">
+        {% for r in restaurant|slice:"9:" %}
+    <div class="card">
+        <img class="img-cards" src="{{ r.img_plat }}" alt="">
+        <h3>{{ r.nom_plat }}</h3>
+        <div class="description">
+            Ratings: <span class = "rated" id="ratings{{ r.id_plat }}"></span>
+        </div>
+        <span class="prix">Price: {{ r.prix_plat }} fcfa</span>
+        <p>{{ r.description }}</p>
+        <button class="button-78" onclick="selectrepas(this)" role="button">Commander</button>
+
+    </div>
+
+    <script>
+        var ratings{{ r.id_plat }} = Math.floor(Math.random() * 5) + 5;
+        document.getElementById("ratings{{ r.id_plat }}").innerHTML = ratings{{ r.id_plat }};
+    </script>
+{% endfor %}
+    </div>
+    </div>
+
+    <div class="cards-n-title">
+        <h2>Nos desserts</h2>
+    <div class="cards">
+        <div class="card">
+            <img class = "img-cards" src="{% static 'dall_diamm/images/jolof_rice.png' %}" alt="">
+            <h3>Tiébou Guinar</h3>
+            <div class="description">Un bon plat de Tiebou dieun</div>
+            <span class="prix">9999fcfa</span>
+        </div>
+        <div class="card">
+            <img class = "img-cards" src="{% static 'dall_diamm/images/jolof_rice.png' %}" alt="">
+            <h3>Tiébou Guinar</h3>
+            <div class="description">Un bon plat de Tiebou dieun</div>
+            <span class="prix">9999fcfa</span>
+        </div>
+        <div class="card">
+            <img class = "img-cards" src="{% static 'dall_diamm/images/jolof_rice.png' %}" alt="">
+            <h3>Tiébou Guinar</h3>
+            <div class="description">Un bon plat de Tiebou dieun</div>
+            <span class="prix">9999fcfa</span>
+        </div>
+    </div>
+    </div>
+    <footer>
+        
+        <div class="left">
+            <h2>Dall Diamm</h2>
+            <div class="social-icons">
+
+                <a href="#"  title="facebook"> 
+                  <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                </a>
+
+                <a href="#" title="twitter"> 
+                  <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                </a>
+                <a href="#" title="instagram">  
+                  <i class="fa fa-instagram" aria-hidden="true"></i>
+                </a>
+
+                <a href="#" title="youtube">
+                  <i class="fa fa-youtube-square" aria-hidden="true"></i>
+                </a>
+
+                <a href="#" title="linkedin">
+                  <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                </a>
+                <!-- <a href="#" title="pinterest">
+                  <i class="fa fa-pinterest-p" aria-hidden="true"></i>
+                </a>
+                <a href="#" title="camera">
+                  <i class="fa fa-camera-retro" aria-hidden="true"></i>
+                </a> -->
+            </div>
+            <p>Since 2023</p>
+        </div>
+        <div class="right">
+            
+            <p>A propos de nous</p>
+        <!-- <a href="#" title="twitter"> 
+        <i class="fa fa-twitter-square" aria-hidden="true"></i>
+        </a>
+        <a href="#" title="youtube">
+        <i class="fa fa-youtube-square" aria-hidden="true"></i>
+        </a>
+        <a href="#" title="linkedin">
+        <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+        </a> -->
+
+
+    <div class="nous">
+        <p>Fatou Bintou Gassama:
+
+    <b>
+        <a href="#" title="github">
+        <i class="fa fa-github-square" aria-hidden="true"></i>
+        </a>
+        <a href="#" title="twitter"> 
+        <i class="fa fa-twitter-square" aria-hidden="true"></i>
+        </a>
+        <a href="#" title="linkedin">
+        <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+        </a>
+    </b>
+        <em>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, debitis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, earum!
+</em>
+
+        </p>
+        <p>Aby Soumaré Diouf:
+
+            <b>
+                <a href="#" title="github">
+                <i class="fa fa-github-square" aria-hidden="true"></i>
+                </a>
+                <a href="#" title="twitter"> 
+                <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                </a>
+                <a href="#" title="linkedin">
+                <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                </a>
+            </b>
+        <em>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, debitis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, earum!
+</em>
+
+        </p>
+        <p>Mbaye Sene:
+
+            <b>
+                <a href="#" title="github">
+                <i class="fa fa-github-square" aria-hidden="true"></i>
+                </a>
+                <a href="#" title="twitter"> 
+                <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                </a>
+                <a href="#" title="linkedin">
+                <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                </a>
+            </b>
+        <em>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, debitis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, earum!
+
+        </em>    
+
+        </p>
+    </div>
+
+        </div>
+        <div class="right">Meilleur hotel du Sénégal</div>
+        <div class="right">dall_diamm.inc ®</div>
+    </footer>
+
+</body>
+</html>

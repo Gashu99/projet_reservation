@@ -21,10 +21,10 @@
                     <div class="collapse navbar-collapse justify-content-end ml-auto" id="navbarTogglerDemo02">
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <a class="nav-link text-white"  href="#">Accueil</a>
+                                <a class="nav-link text-white"  href="{% url 'index' %}">Accueil</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-white" href="#">Chambre</a>
+                                <a class="nav-link text-white" href="{% url 'listechambre' %}">Chambre</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link text-white " href="#">Vehicule</a>
@@ -33,10 +33,10 @@
                                 <a class="nav-link text-white" href="#">Restaurant</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-white">Connexion</a>
+                                <a class="nav-link text-white" href="{% url 'connexion' %}">Connexion</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-white" href="#">Inscription</a>
+                                <a class="nav-link text-white" href="{% url 'form_inscription' %}">Inscription</a>
                             </li>
                         </ul>
                     </div>

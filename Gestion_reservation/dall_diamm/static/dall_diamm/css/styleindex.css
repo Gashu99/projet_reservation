@@ -482,3 +482,69 @@ body {
     height: 200px;
     background-color: black;
 }
+
+@media only screen and (max-width: 480px) {
+    .barre_recherche {
+        width: 50%;
+        left: 25%;
+    }
+
+    .be {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        top: 200px;
+    }
+
+    .fr {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .wf {
+        margin-left: 0;
+    }
+
+    .text {
+        margin-left: 0;
+        top: 40%;
+    }
+
+    .activity {
+        margin-left: 0;
+        text-align: center;
+        top: 60%;
+    }
+
+    .mesimg {
+        top: 75%;
+    }
+
+    .RC {
+        top: -135%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .RR {
+        top: 70%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .activity1 {
+        position: static;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .carte1 {
+        width: 100%;
+        top: 115%;
+        left: 0;
+    }
+    .avance{
+        display: flex;
+        flex-direction: column;
+    }
+}

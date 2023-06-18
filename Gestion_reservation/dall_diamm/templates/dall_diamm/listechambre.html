@@ -5,11 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="{% static 'dall_diamm/css/stylechambre.css' %}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <title>Document</title>
 </head>
-<body>
-    <div class="back">
+<body >
+    <div class="back ">
     <img src="{% static 'dall_diamm/images/chambreback.jpg' %}" alt="" class="backch">
     </div>
     <div class="entete">
@@ -24,8 +26,10 @@
     </div>
     <div class="LUC">
         <p class="luc">LOUER UNE CHAMBRE </p>
+        <form action="">
+            <input type="search" placeholder="prix" name="chercher"  >
+        </form>
         
-        <input type="search" placeholder="prix" name="chercher"  >
     </div>
 
     <p class="nvp"><em>Nous vous proposons:</em></p>
@@ -33,8 +37,23 @@
 
     <div class="all">
     
+        <div class="row">
     {% for ch in chambre %}
-    <div class="info">
+    <div class="col-md-4">
+    <div class="card  mt-3" style="width: 18rem; border-radius: 10%;">
+        <img src="{% static 'dall_diamm/images/chambre.jpg' %}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title text-truncate">Chambre numero: {{ch.id_c}} <br>{{ch.nom_chmb }} </h5>
+          {% for i in "1234"%}
+          <i class="bi bi-star-fill text-warning"></i>
+          {% endfor %}
+
+          <p class="card-text"> {{ch.prix_chmb}} FCFA</p>
+          <a href="{% url 'connexion'   %}" class="btn btn-outline-danger" >Reserver</a>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="info">
         <img src="{% static 'dall_diamm/images/chambre.jpg' %}" alt="" width="80%">
             <div class="description">
                <p><strong>chambre numero: </strong> {{ch.id_c}}</p> 
@@ -43,8 +62,9 @@
                 <a href="{% url 'formreservation_chambre'   %}">Reserver </a>
             </div>
             
-    </div>
+    </div> -->
     {% endfor %}
+</div>
     
     </div>
     <div class="footer">
@@ -52,8 +72,9 @@
     </div>
 
 
-    <div class="footer">
+    <div class="footer ">
         {% include 'dall_diamm/footer.html' %}
     </div>
 </body>
+
 </html>
